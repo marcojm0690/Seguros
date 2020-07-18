@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Seguros.DAL.Models.Insurance>
+﻿@model IEnumerable<Seguros.DAL.Models.Client>
 <div class="jumbotron">
     <h1>Consultar Seguro</h1>
 </div>
@@ -6,28 +6,22 @@
     <table class="table table-dark">
         <tr>
             <th scope="col">
-                Insurance
+                Nombre
             </th>
             <th scope="col">
-                Description
+                Edad
             </th>
-            <th scope="col">
-                Name
-            </th>
-            <th scope="col">
-                Risk Type
-            </th>
+            
         </tr>
-        @foreach (var insurance in Model)
+        @foreach (var client in Model)
         {
         <tr>
             <td scope="row">
-                @insurance.Name
+                @client.Name;
             </td>
             <td>
-                @insurance.Description
+                @client.Age
             </td>
-            
         </tr>
         }
     </table>
