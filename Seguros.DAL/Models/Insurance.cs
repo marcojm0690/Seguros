@@ -20,6 +20,10 @@ namespace Seguros.DAL.Models
         
         public Category Category { get; set; }
 
+        public int ClientID { get; set; }
+
+        public Client Client{ get; set; }
+
         [Required]
         [MaxLength(15)]
         public string Name { get; set; }

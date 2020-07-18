@@ -11,13 +11,7 @@ namespace Seguros.DAL.Models
     {
         [Key]
         public int ClientID { get; set; }
-
-        [Required]
-        public int InsuranceId { get; set; }
-
-
-        public Insurance Insurance { get; set; }
-
+        
         [Required]
         [MaxLength(15)]
         public string Name { get; set; }
