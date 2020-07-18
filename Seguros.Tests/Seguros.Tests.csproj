@@ -109,9 +109,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Seguros\Seguros.csproj">
+    <ProjectReference Include="..\Seguros\Seguros.Web.csproj">
       <Project>{B813581C-89E3-4713-B959-73BA761C37C3}</Project>
-      <Name>Seguros</Name>
+      <Name>Seguros.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
