@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,12 +53,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Migrations\202007180631205_InitialCreate.cs" />
+    <Compile Include="Migrations\202007180631205_InitialCreate.designer.cs">
+      <DependentUpon>202007180631205_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="IInsuranceRepository.cs" />
+    <Compile Include="InsuranceRepository.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Insurance.cs" />
+    <Compile Include="InsuranceContext.cs" />
+    <Compile Include="Models\RiskType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202007180631205_InitialCreate.resx">
+      <DependentUpon>202007180631205_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
