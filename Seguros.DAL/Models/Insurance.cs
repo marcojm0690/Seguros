@@ -17,12 +17,7 @@ namespace Seguros.DAL.Models
         [Required]
         public int CategoryID { get; set; }
 
-        
-        public Category Category { get; set; }
-
         public int ClientID { get; set; }
-
-        public Client Client{ get; set; }
 
         [Required]
         [MaxLength(15)]
@@ -42,7 +37,7 @@ namespace Seguros.DAL.Models
 
         public int RiskTypeID { get; set; }
 
-        public RiskType RiskType { get; set; }
+        public bool IsActive { get; set; }
 
     }
 }

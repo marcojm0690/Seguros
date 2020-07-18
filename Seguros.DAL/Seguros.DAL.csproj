@@ -57,6 +57,30 @@
     <Compile Include="Migrations\202007180631205_InitialCreate.designer.cs">
       <DependentUpon>202007180631205_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007181459473_Initial.cs" />
+    <Compile Include="Migrations\202007181459473_Initial.designer.cs">
+      <DependentUpon>202007181459473_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007181816180_Initial1.cs" />
+    <Compile Include="Migrations\202007181816180_Initial1.Designer.cs">
+      <DependentUpon>202007181816180_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007181819469_Initial2.cs" />
+    <Compile Include="Migrations\202007181819469_Initial2.designer.cs">
+      <DependentUpon>202007181819469_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007181822118_Test.cs" />
+    <Compile Include="Migrations\202007181822118_Test.designer.cs">
+      <DependentUpon>202007181822118_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007181824044_Test1.cs" />
+    <Compile Include="Migrations\202007181824044_Test1.designer.cs">
+      <DependentUpon>202007181824044_Test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007181826009_Test2.cs" />
+    <Compile Include="Migrations\202007181826009_Test2.designer.cs">
+      <DependentUpon>202007181826009_Test2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="IInsuranceRepository.cs" />
@@ -74,6 +98,24 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007180631205_InitialCreate.resx">
       <DependentUpon>202007180631205_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007181459473_Initial.resx">
+      <DependentUpon>202007181459473_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007181816180_Initial1.resx">
+      <DependentUpon>202007181816180_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007181819469_Initial2.resx">
+      <DependentUpon>202007181819469_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007181822118_Test.resx">
+      <DependentUpon>202007181822118_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007181824044_Test1.resx">
+      <DependentUpon>202007181824044_Test1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007181826009_Test2.resx">
+      <DependentUpon>202007181826009_Test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

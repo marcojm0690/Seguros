@@ -24,12 +24,11 @@ namespace Seguros.Controllers
 
         public ActionResult Query()
         {
-            var insurances = from insurance in _insuranceRepository.GetAllInsurances()
-                        select insurance;
-            ViewBag.Title = "Consultar Seguro";
+            var clients = from client in _insuranceRepository.GetAllClients() select client;
 
+            ViewBag.Title = "Consultar Cliente";
 
-            return View(insurances);
+            return View(clients);
         }
         public ActionResult Delete()
         {
@@ -37,11 +36,14 @@ namespace Seguros.Controllers
 
             return View();
         }
+
         public ActionResult Modify()
         {
             ViewBag.Title = "Modificar Seguro";
 
             return View();
         }
+
+
     }
 }

@@ -24,6 +24,12 @@
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
         public DbSet<Insurance> Insurances { get; set; }
 
+        public DbSet<Client> Clients { get; set; }
+
+        public DbSet<RiskType> RiskTypes { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
     }
 
     //public class MyEntity

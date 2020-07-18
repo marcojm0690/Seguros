@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Seguros.DAL
 {
-    public class InsuranceRepository: IInsuranceRepository
+    public class InsuranceRepository : IInsuranceRepository
     {
 
         private InsuranceContext _context;
@@ -23,6 +23,11 @@ namespace Seguros.DAL
             return _context.Insurances.ToList();
         }
 
+        public IEnumerable<Client> GetAllClients()
+        {
+            return _context.Clients.ToList();
+        }
+        
         public Insurance GetInsuranceById(int id)
         {
             return _context.Insurances.Find(id);
@@ -35,7 +40,7 @@ namespace Seguros.DAL
 
         public void DeleteInsurance(int insuranceId)
         {
-            Insurance insurance= _context.Insurances.Find(insuranceId);
+            Insurance insurance = _context.Insurances.Find(insuranceId);
             _context.Insurances.Remove(insurance);
         }
 

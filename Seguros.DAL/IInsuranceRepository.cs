@@ -10,6 +10,7 @@ namespace Seguros.DAL
     public interface IInsuranceRepository : IDisposable
     {
         IEnumerable<Insurance> GetAllInsurances();
+        IEnumerable<Client> GetAllClients();
         Insurance GetInsuranceById(int insuranceID);
         void AddInsurance(Insurance insurance);
         void DeleteInsurance(int insuranceID);
