@@ -81,6 +81,10 @@
     <Compile Include="Migrations\202007181826009_Test2.designer.cs">
       <DependentUpon>202007181826009_Test2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007211959189_Test3.cs" />
+    <Compile Include="Migrations\202007211959189_Test3.designer.cs">
+      <DependentUpon>202007211959189_Test3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="IInsuranceRepository.cs" />
@@ -116,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007181826009_Test2.resx">
       <DependentUpon>202007181826009_Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211959189_Test3.resx">
+      <DependentUpon>202007211959189_Test3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

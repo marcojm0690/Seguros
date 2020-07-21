@@ -20,17 +20,17 @@ namespace Seguros.DAL
 
         public IEnumerable<Insurance> GetAllInsurances()
         {
-            return _context.Insurances.ToList();
+            return _context.Insurances.Where(c => c.IsActive == true);
         }
 
         public IEnumerable<Client> GetAllClients()
         {
-            return _context.Clients.ToList();
+            return _context.Clients.Where(c => c.IsActive == true).ToList();
         }
         
-        public Insurance GetInsuranceById(int id)
+        public Insurance GetInsuranceById(int? id)
         {
-            return _context.Insurances.Find(id);
+            return _context.Insurances.Single(c => c.ClientID == id && c.IsActive == true);
         }
 
         public void AddInsurance(Insurance insurance)

@@ -11,10 +11,11 @@ namespace Seguros.DAL
     {
         IEnumerable<Insurance> GetAllInsurances();
         IEnumerable<Client> GetAllClients();
-        Insurance GetInsuranceById(int insuranceID);
+        //Insurance GetInsuranceById(int insuranceID);
         void AddInsurance(Insurance insurance);
         void DeleteInsurance(int insuranceID);
         void ModifyInsurance(Insurance insurance);
         void Save();
+        Insurance GetInsuranceById(int? clientID);
     }
 }

@@ -2,8 +2,11 @@
 <div class="jumbotron">
     <h1>Consultar Seguro</h1>
 </div>
-<div class="row">
-    <table class="table table-dark">
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div >
+    <table class="table table-bordered table-responsive ">
         <tr>
             <th scope="col">
                 Nombre
@@ -11,7 +14,9 @@
             <th scope="col">
                 Edad
             </th>
-            
+            <th scope="col">
+                Acciones
+            </th>
         </tr>
         @foreach (var client in Model)
         {
@@ -19,8 +24,13 @@
             <td scope="row">
                 @client.Name;
             </td>
-            <td>
+            <td scope="row">
                 @client.Age
+            </td>
+            <td scope="row">
+                @Html.ActionLink("Edit", "Edit", new { id = client.ClientID}) |
+                @Html.ActionLink("Details", "Details", new { id = client.ClientID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = client.ClientID })
             </td>
         </tr>
         }

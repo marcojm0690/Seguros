@@ -17,7 +17,7 @@ namespace Seguros.DAL.Models
         [Required]
         public int CategoryID { get; set; }
 
-        public int ClientID { get; set; }
+        public int? ClientID { get; set; }
 
         [Required]
         [MaxLength(15)]
